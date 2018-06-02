@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>Cuddington and Sandiway Community Singers</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script type="text/javascript" language="JavaScript" src="formscript.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="heading">
+				<img src="images/logo.png" class="logo" /><h1>Cuddington And Sandiway<br> Community Singers</h1>
+			</div>
+				<!--These are the navigation buttons-->
+			<div id="nav1">
+				<a href="index.html"><img src="images/homeoff.png" onmouseover="this.src='images/homeon.png'" onmouseout="this.src='images/homeoff.png'" class="button" border="0px" /></a>
+				<a href="about.html"><img src="images/aboutoff.png" onmouseover="this.src='images/abouton.png'" onmouseout="this.src='images/aboutoff.png'" class="button" border="0px" /></a>
+				<a href="diary.html"><img src="images/diaryoff.png" onmouseover="this.src='images/diaryon.png'" onmouseout="this.src='images/diaryoff.png'" class="button" border="0px" /></a>
+				<a href="pictures.html"><img src="images/picturesoff.png" onmouseover="this.src='images/pictureson.png'" onmouseout="this.src='images/picturesoff.png'" class="button" border="0px" /></a>
+				<a href="contact.html"><img src="images/contactoff.png" onmouseover="this.src='images/contacton.png'" onmouseout="this.src='images/contactoff.png'" class="button" border="0px" /></a>
+				</div>
+				<!--These are the social network buttons and the page label-->
+			<div id="nav2">
+				<div id="soc">
+					<a href="mailto:marcus@mjwmusic.co.uk?Subject=Website&Mail"><img src="images/mailOff.png" onmouseover="this.src='images/mailOn.png'" onmouseout="this.src='images/mailOff.png'" border="0px" /></a>
+					<img src="images/line.png" WIDTH="2" HEIGHT="40" BORDER="0">
+					<a href="http://www.youtube.com/"><img src="images/ytoff.png" onmouseover="this.src='images/yton.png'" onmouseout="this.src='images/ytoff.png'" border="0px" /></a>
+					<a href="http://www.facebook.com/"><img src="images/fboff.png" onmouseover="this.src='images/fbon.png'" onmouseout="this.src='images/fboff.png'" border="0px" /></a>
+					<a href="http://www.gmail.com/"><img src="images/goff.png" onmouseover="this.src='images/gon.png'" onmouseout="this.src='images/goff.png'" border="0px" /></a>
+				</div>
+				<h2>Contact Us!</h2>
+			</div>
+				<!--This is where the actual content goes-->
+			<div id="content">
+				<div class ="image">
+					<h4>Cuddington Railway</h4>
+					<img src="images/cuddington.png" height="190" width="306">
+				</div>
+				<h3><u>Contact Us!</u></h3>
+				
+					<p>Contact form to be sent to <a href="mailto:marcus@mjwmusic.co.uk?Subject=Website&Mail">marcus@mjwmusic.co.uk</a></p>
+					<p align="center"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.21564708912!2d-2.601859349999955!3d53.23191055000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487afa53381f9a15%3A0x322c6d29da3c8160!2sSandiway%2C+Northwich%2C+Cheshire+West+and+Chester+CW8+2NY!5e0!3m2!1sen!2suk!4v1415630829828" width="800" height="600" frameborder="0" style="border:0"></iframe></p>
+					<center>	
+						<div id="form">
+								<form name="exampleForm" onsubmit="return checkForm()" action="alphapenguindesign@gmail.com" method="post">
+									<p>First Name: <input type="text" name="firstName" placeholder="Enter first name here" size="30" maxlength="15">   <!--Add an input box for first name called "forename"--></p>
+									<p>Surname:   <input type="text" name="surName" placeholder="Enter surname here" size="20" maxlength="15">    <!--Add an input box for surname called "surname"--></p>
+									<p>Phone Number:     <input type="text" name="phone" placeholder="Enter number here" size="20" maxlength="30">  <!--Add an input box for address called "address"--></p>
+									<p>Date of Birth: <input type="text" name="DoB" placeholder="Enter date of birth here" size="20" maxlength="10"> <!--Add an input box for Date of Birth called "DoB"--> (dd/mm/yyyy)</p>
+									<p>e-mail:   <input type="text" name="email" placeholder="Enter email here" size="35" maxlength="30">     <!--Add an input box for email called "email"--></p>
+
+									<hr>
+
+									<p>What voice type do you have?</p>
+									<ul style="list-style-type:none">
+									<li><input type="radio" name="voicetype" value="Countertenor">Countertenor  <!--Add a radio button named "grade" with the value "D"--></li>
+									<li><input type="radio" name="voicetype" value="Tenor">Tenor         <!--Add a radio button named "grade" with the value "M"--></li>
+									<li><input type="radio" name="voicetype" value="Baritone">Baritone         <!--Add a radio button named "grade" with the value "P"--></li>
+									<li><input type="radio" name="voicetype" value="Baritone">Baritone         <!--Add a radio button named "grade" with the value "P"--></li>
+									<li><input type="radio" name="voicetype" value="Not sure" onclick="fail()">Not Sure          <!--Add a radio button named "grade" with the value "F" and the attribute onclick="fail()"--></li>
+									</ul>
+
+									<hr>
+									
+									<p>How did you hear about us?</p>
+									<ul style="list-style-type:none">
+									<li><input type="checkbox" name="hear" value="Website">Website           <!--Add a check box with the name "travel" and value "bus"--></li>
+									<li><input type="checkbox" name="hear" value="Advert">Advert	     <!--Add a check box with the name "travel" and value "train"--></li>
+									<li><input type="checkbox" name="hear" value="">Word of Mouth           <!--Add a check box with the name "travel" and value "car"--></li>
+									<li><input type="checkbox" name="hear" value="Teachers">Teachers    <!--Add a check box with the name "travel" and value "motorbike"--></li>
+									<li><input type="checkbox" name="hear" value="other" onclick="visible('state')">Other         <!--Add a check box with the name "other" and an onclick value of "visible('state')"--></li>
+									</ul>
+
+									<hr>
+									
+									<p id="state" style="display:none;"><!--add the attributes id='state' and style='display:none;' to your p tag-->Please state: <!--Add a text box with the name "other_state"--><input type="text" name="other_state" size="20" maxlength="15"></p>
+																  
+									<p>Comments please</p>
+									<p><!--Add a text area with the name "comments"--><textarea rows="2" cols="50" name="comments" >Keep it clean!!!</textarea><!--Don't forget to close your text area--></p>
+									<p><input type="submit" value="submit"><input type="reset" value="reset"><!--You will need two buttons to submit and clear your form--></p>
+									<!--Don't forget to close your form-->
+								</form>
+							</div>
+						</center>
+			</div>
+
+				<!--This is the footer, this contains the counter and anything else which all pages need-->
+		<div id="nav3">
+				<h5>Created by Nathan McBride</h5>
+				<div id=counter>
+					<center>
+						<A href="http://www.speedcounter.com"><img src='http://www.speedcounter.com/count.php?counterid=36681&theme=0' ALT="SpeedCounter" ></a><br>
+						<script>CID=36681;</script>
+						<script language="Javascript" SRC='http://www.speedcounter.com/count.js'></script>
+						<i><font size="1" color="666666" face="Times new roman, Times, serif"><A href="http://www.speedcounter.com/cccsignup.php">Speedcounter Website Counter</a></font></i>
+					</center>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

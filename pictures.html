@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<title>Cuddington and Sandiway Community Singers</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		
+		<script type="text/javascript">
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "images/pic1.jpg" // set image object src property to an image's src, preloading that image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "images/pic2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "images/pic3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "images/pic4.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "images/pic5.jpg"
+</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="heading">
+				<img src="images/logo.png" class="logo" /><h1>Cuddington And Sandiway<br> Community Singers</h1>
+			</div>
+				<!--These are the navigation buttons-->
+			<div id="nav1">
+				<a href="index.html"><img src="images/homeOff.png" onmouseover="this.src='images/homeOn.png'" onmouseout="this.src='images/homeOff.png'" class="button" border="0px" /></a>
+				<a href="about.html"><img src="images/aboutOff.png" onmouseover="this.src='images/aboutOn.png'" onmouseout="this.src='images/aboutOff.png'" class="button" border="0px" /></a>
+				<a href="diary.html"><img src="images/diaryOff.png" onmouseover="this.src='images/diaryOn.png'" onmouseout="this.src='images/diaryOff.png'" class="button" border="0px" /></a>
+				<a href="pictures.html"><img src="images/picturesOff.png" onmouseover="this.src='images/picturesOn.png'" onmouseout="this.src='images/picturesOff.png'" class="button" border="0px" /></a>
+				<a href="contact.html"><img src="images/contactOff.png" onmouseover="this.src='images/contactOn.png'" onmouseout="this.src='images/contactOff.png'" class="button" border="0px" /></a>
+				</div>
+				<!--These are the social network buttons and the page label-->
+			<div id="nav2">
+				<div id="soc">
+					<a href="mailto:marcus@mjwmusic.co.uk?Subject=Website&Mail"><img src="images/mailoff.png" onmouseover="this.src='images/mailon.png'" onmouseout="this.src='images/mailoff.png'" border="0px" /></a>
+					<img src="images/line.png" WIDTH="2" HEIGHT="40" BORDER="0">
+					<a href="http://www.youtube.com/"><img src="images/ytOff.png" onmouseover="this.src='images/ytOn.png'" onmouseout="this.src='images/ytOff.png'" border="0px" /></a>
+					<a href="http://www.facebook.com/"><img src="images/fbOff.png" onmouseover="this.src='images/fbOn.png'" onmouseout="this.src='images/fbOff.png'" border="0px" /></a>
+					<a href="http://www.gmail.com/"><img src="images/gOff.png" onmouseover="this.src='images/gOn.png'" onmouseout="this.src='images/gOff.png'" border="0px" /></a>
+				</div>
+				<h2>Pictures</h2>
+			</div>
+				<!--This is where the actual content goes-->
+			<div id="content">
+				<center>
+					<a href="javascript:slidelink()"><img src="images/pic1.jpg" id="slide" ></a>
+
+						<script type="text/javascript">
+
+							//variable that will increment through the images
+							var step = 0
+							var whichimage = 0
+
+							function slideit(){
+							 //if browser does not support the image object, exit.
+							 if (!document.images)
+							  return
+							 document.getElementById('slide').src = slideimages[step].src
+							 whichimage = step
+							 if (step<4)
+							  step++
+							 else
+							  step=0
+							 //call function "slideit()" every 2.5 seconds
+							 setTimeout("slideit()",2500)
+							}
+
+							function slidelink(){
+							 if (whichimage == 0)
+							  window.location = "link1.htm"
+							 else if (whichimage == 1)
+							  window.location = "link2.htm"
+							 else if (whichimage == 2)
+							  window.location = "link3.htm"
+							}
+
+							slideit()
+
+						</script>
+				
+				</center>
+			</div>
+				<!--This is the footer, this contains the counter and anything else which all pages need-->
+		<div id="nav3">
+				<h5>Created by Nathan McBride</h5>
+				<div id=counter>
+					<center>
+						<A href="http://www.speedcounter.com"><img src='http://www.speedcounter.com/count.php?counterid=36681&theme=0' ALT="SpeedCounter" ></a><br>
+						<script>CID=36681;</script>
+						<script language="Javascript" SRC='http://www.speedcounter.com/count.js'></script>
+						<i><font size="1" color="666666" face="Times new roman, Times, serif"><A href="http://www.speedcounter.com/cccsignup.php">Speedcounter Website Counter</a></font></i>
+					</center>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
